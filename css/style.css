@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.pc {
+    display: none;
+}
+
+.content {
+    margin: 0.625em;
+    font-size: 1em;
+}
+
+.content__title {
+    font-size: 1.7em;
+}
+
+.recipe-description {
+    display: flex;
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: left;
+}
+
+.recipe-description__dots {
+    height: 0.625em;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+.recipe-description__text {
+    width: 90%;
+    font-weight: 700;
+    color: #7f7f7f;
+    font-style: italic;
+}
+
+.content__image {
+    width: 100%;
+    margin: 1.5em 0;
+    border-radius: 5px;
+}
+
+.yields {
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+}
+
+.yields__icon {
+    color: #f90;
+    font-size: .7em;
+    margin-right: 10px;
+}
+
+.yields__text {
+    font-size: .8em;
+}
+
+.yields__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.yields__count {
+    color: #f90;
+}
+
+.times {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5em 0;
+}
+
+.prep-time,
+.cook-time,
+.total-time {
+    display: flex;
+    font-size: .8em;
+}
+
+.prep-time__icon,
+.cook-time__icon,
+.total-time__icon {
+    margin-right: 7px;
+}
+
+.prep-time__title,
+.cook-time__title,
+.total-time__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.ingredients-title {
+    font-size: 1.2em;
+    margin: 1.5em 0 0 0;
+}
+
+.graham-cracker-crust,
+.cheesecake {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 100;
+    margin: .8em 0;
+}
+
+.cheesecake {
+    margin-top: 1.5em;
+}
+
+.graham-cracker-crust-ingredients,
+.cheesecake-ingredients {
+    list-style: none;
+}
+
+.graham-cracker-crust-ingredients li,
+.cheesecake-ingredients li {
+    margin: .5em 0;
+}
+
+.graham-cracker-crust-ingredients li label,
+.cheesecake-ingredients li label {
+    display: flex;
+    flex-direction: row;
+}
+
+.graham-cracker-crust-ingredients li label input,
+.cheesecake-ingredients li label input {
+    margin-right: 10px;
+}
+
+.graham-cracker-crust-ingredients li label p,
+.cheesecake-ingredients li label p {
+    line-height: 150%;
+    font-size: .9em;
+}
+
+.graham-cracker-crust-ingredients li label p span,
+.cheesecake-ingredients li label p span {
+    font-weight: 800;
+}
+
+.instructions-title {
+    font-size: 1.2em;
+    margin: 1.5em 0;
+}
+
+.instructions__step {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.instructions__step__number {
+    padding: 7px 9px;
+    margin-right: 1em;
+    border-radius: 5px;
+    background-color: #f90;
+    color: #fff;
+    font-weight: 800;
+}
+
+.instructions__step__text {
+    line-height: 150%;
+}
+
+.instructions__step__text span {
+    font-weight: 800;
+}
+
+.source {
+    font-size: 1em;
+    color: #777;
+    margin: 5em 0; 
+}
+
+.source a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+.copyright {
+    font-size: .85em;
+    color: #aaa;
+    text-align: center;
+    margin: 5em 0 .8em 0;
+}
+
+.copyright a {
+    color: #777;
+    font-weight: bold;
+    text-decoration: underline  ;
+}
+
+.material-icons.md-30 { font-size: 20px;}
+
+@media screen and (min-width: 755px) {
+    body {
+        font-size: 14px;
+    }
+
+    .content {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .content {
+        max-width: none;
+        width: 70%;
+        margin: 2em auto;
+    }
+
+    .content__title {
+        font-size: 2.5em;
+    }
+
+    .recipe-description__text {
+        width: 579px;
+        font-size: .8em;
+    }
+
+    .content__text {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+
+    .ingredients-title {
+        margin: 0;
+    }
+
+    .content__text__counts {
+        padding: 3em 2em;
+        box-shadow: 1px 1px 7px 1px #aaa;
+        margin-left: 4em;
+        white-space: nowrap;
+    }
+
+    .times {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .prep-time,
+    .cook-time,
+    .total-time {
+        margin: 4em 0 0 0;
+    }
+
+    .material-icons.md-30 { font-size: 30px;}
+}
