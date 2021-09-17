@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://githuh.com/kronorit/recipe-page">
+    <a href="https://github.com/kronorit/recipe-page">
       Solution
     </a>
     <span> | </span>
